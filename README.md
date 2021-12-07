@@ -15,6 +15,7 @@
 
 ## Association
 
+- has_many :purchases
 - has_many :items, through: :purchases
 
 ## items テーブル
@@ -27,12 +28,13 @@
 | status_id              | integer    | null: false, default: 0        |
 | shipping_fee_burden_id | integer    | null: false, default: 0        |
 | prefecture_id          | integer    | null: false, default: 0        |
-| dalivery_day_id        | integer    | null: false, default: 0        |
+| delivery_day_id        | integer    | null: false, default: 0        |
 | price                  | integer    | null: false                    |
 | user                   | references | null: false, foreign_key: true |
 
 ## Association
 
+- has_many :purchases
 - has_many :users, through: :purchases
 
 ## purchases テーブル
