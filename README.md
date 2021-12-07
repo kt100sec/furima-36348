@@ -30,7 +30,7 @@
 | prefecture_id          | integer    | null: false, default: 0        |
 | dalivery_day_id        | integer    | null: false, default: 0        |
 | price                  | integer    | null: false                    |
-| user_id                | references | null: false, foreign_key: true |
+| user                   | references | null: false, foreign_key: true |
 
 ## Association
 
@@ -46,7 +46,7 @@
 | house_number     | integer    | null: false                    |
 | building_name    | string     |                                |
 | phone_number     | string     |                                |
-| user_id          | references | null: false, foreign_key: true |
+| user             | references | null: false, foreign_key: true |
 
 ## Association
 
@@ -57,7 +57,7 @@
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | ------------------------------ |
-| user_id     | references | null: false, foreign_key: true |
+| user        | references | null: false, foreign_key: true |
 | customer_id | string     | null: false                    |
 
 - belongs_to :users
