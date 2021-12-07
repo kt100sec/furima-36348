@@ -15,7 +15,7 @@
 
 ## Association
 
-- has_many :items
+- has_many :items, through: :purchases
 - has_many :payment_cards
 
 ## items テーブル
@@ -34,9 +34,22 @@
 
 ## Association
 
-- belongs_to :users
+- has_many :users, through: :purchases
 
- ## address テーブル
+## purchases テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| item   | references | null: false, foreign_key: true |
+
+## Association
+
+- belongs_to :users
+- belongs_to :items
+- has_one :address
+
+## address テーブル
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
@@ -50,8 +63,7 @@
 
 ## Association
 
-- belongs_to :users
-- belongs_to :payment_cards
+- belongs_to :purchases
 
 ## payment_cards テーブル
 
@@ -61,4 +73,3 @@
 | customer_id | string     | null: false                    |
 
 - belongs_to :users
-- has_one :address
