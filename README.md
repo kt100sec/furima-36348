@@ -16,22 +16,21 @@
 ## Association
 
 - has_many :items
-- has_one :address
-- has_one :payment_cards
+- has_many :payment_cards
 
 ## items テーブル
 
-| Column              | Type       | Options                        |
-| ------------------- | ---------- | ------------------------------ |
-| name                | string     | null: false                    |
-| text                | text       | null: false                    |
-| image               | string     | null: false                    |
-| status              | integer    | null: false, default: 0        |
-| shipping_fee_burden | integer    | null: false, default: 0        |
-| prefecture_id       | integer    | null: false, default: 0        |
-| dalivery_days       | integer    | null: false, default: 0        |
-| price               | integer    | null: false                    |
-| user_id             | references | null: false, foreign_key: true |
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| name                   | string     | null: false                    |
+| text                   | text       | null: false                    |
+| category_id            | integer    | null: false, default: 0        |
+| status_id              | integer    | null: false, default: 0        |
+| shipping_fee_burden_id | integer    | null: false, default: 0        |
+| prefecture_id          | integer    | null: false, default: 0        |
+| dalivery_day_id        | integer    | null: false, default: 0        |
+| price                  | integer    | null: false                    |
+| user_id                | references | null: false, foreign_key: true |
 
 ## Association
 
@@ -52,6 +51,7 @@
 ## Association
 
 - belongs_to :users
+- belongs_to :payment_cards
 
 ## payment_cards テーブル
 
@@ -61,3 +61,4 @@
 | customer_id | string     | null: false                    |
 
 - belongs_to :users
+- has_one :address
