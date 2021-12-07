@@ -45,8 +45,8 @@
 
 ## Association
 
-- belongs_to :users
-- belongs_to :items
+- belongs_to :user
+- belongs_to :item
 - has_one :address
 
 ## address テーブル
@@ -63,7 +63,7 @@
 
 ## Association
 
-- belongs_to :purchases
+- belongs_to :purchase
 
 ## payment_cards テーブル
 
@@ -72,4 +72,4 @@
 | user        | references | null: false, foreign_key: true |
 | customer_id | string     | null: false                    |
 
-- belongs_to :users
+- belongs_to :user
