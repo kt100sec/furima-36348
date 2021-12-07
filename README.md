@@ -16,7 +16,7 @@
 ## Association
 
 - has_many :purchases
-- has_many :items, through: :purchases
+- has_many :items
 
 ## items テーブル
 
@@ -34,8 +34,8 @@
 
 ## Association
 
-- has_many :purchases
-- has_many :users, through: :purchases
+- has_one :purchase
+- has_many :users
 
 ## purchases テーブル
 
