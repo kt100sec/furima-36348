@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="-nooojGU1mxJkSvP-cFF" name="ページ1">
-        <mxGraphModel dx="1775" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2015" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -69,23 +69,6 @@
                 <mxCell id="51" value="user (references / null: false, foreign_key: true)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="19" vertex="1">
                     <mxGeometry y="266" width="306" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="Payment_cards" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
-                    <mxGeometry x="-255" y="430" width="265" height="86" as="geometry">
-                        <mxRectangle x="110" y="250" width="50" height="26" as="alternateBounds"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="58" value="user (references / null: false, foreign_key: true)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="52" vertex="1">
-                    <mxGeometry y="26" width="265" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="payjp_customer_id (string / null: false)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="52" vertex="1">
-                    <mxGeometry y="56" width="265" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="133" style="edgeStyle=none;jumpSize=6;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="64" target="60">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="64" value="pay.jp&lt;br&gt;API" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="-413" y="466" width="100" height="50" as="geometry"/>
-                </mxCell>
                 <mxCell id="67" value="address" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="-260" y="120" width="270" height="236" as="geometry">
                         <mxRectangle x="110" y="250" width="50" height="26" as="alternateBounds"/>
@@ -122,9 +105,6 @@
                     <mxGeometry y="56" width="170" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="131" style="edgeStyle=none;jumpSize=6;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="68" target="115">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="132" style="edgeStyle=none;jumpSize=6;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="40" target="60">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>

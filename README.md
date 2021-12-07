@@ -16,7 +16,6 @@
 ## Association
 
 - has_many :items, through: :purchases
-- has_many :payment_cards
 
 ## items テーブル
 
@@ -64,12 +63,3 @@
 ## Association
 
 - belongs_to :purchase
-
-## payment_cards テーブル
-
-| Column      | Type       | Options                        |
-| ----------- | ---------- | ------------------------------ |
-| user        | references | null: false, foreign_key: true |
-| customer_id | string     | null: false                    |
-
-- belongs_to :user
