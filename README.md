@@ -48,7 +48,7 @@
 
 - belongs_to :user
 - belongs_to :item
-- has_one :address
+- has_one :addresses
 
 ## addresses テーブル
 
@@ -60,7 +60,7 @@
 | house_number     | string     | null: false                    |
 | building_name    | string     |                                |
 | phone_number     | string     | null: false                    |
-| user             | references | null: false, foreign_key: true |
+| purchases        | references | null: false, foreign_key: true |
 
 ## Association
 
